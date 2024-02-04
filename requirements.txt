@@ -1,0 +1,4 @@
+numpy
+scikit-learn
+flask_cors
+streamlit
