@@ -36,7 +36,7 @@ def textrank_summary(text, num_sentences=5):
     ranked_sentences = [sentences[i] for i in np.argsort(scores)[::-1][:num_sentences]]
     return ' '.join(ranked_sentences)
 
-@app.route('http://127.0.0.1:5001/process-text', methods=['POST'])
+@app.route('/5001/process-text', methods=['POST'])
 def process_text():
     if request.method == 'POST':
         try:
