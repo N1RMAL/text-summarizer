@@ -116,7 +116,7 @@
                             formData.append('file', new Blob([arrayBuffer]));
 
                             // Send the file to the Flask server for text extraction and processing
-                            fetch('http://127.0.0.1:5000/process-text', {
+                            fetch('http://127.0.0.1:5001/process-text', {
                                     method: 'POST',
                                     body: formData
                                 })
