@@ -7,6 +7,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import mammoth
+import pyzmq
+import ipykernel
 from flask_cors import CORS
 
 app = Flask(__name__)
